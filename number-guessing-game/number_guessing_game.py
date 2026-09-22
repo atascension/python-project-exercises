@@ -3,7 +3,6 @@ import random
 user_guess_bracket = []
 attempts = 0
 game_number = random.randint(1, 10)
-print(game_number)
 
 print("")
 print("""Welcome to the number guessing game!
@@ -43,7 +42,12 @@ while attempts < 5:
         else:
             print("Sorry that guess is too high, try again!")
     else:
+        print()
         print("Congratulations, you guessed the correct number!")
+        print("Here are your previous attempts: ", end="")
+        for guess in user_guess_bracket:
+            print(guess, end= ", ")
+        print()
         break
 
         
