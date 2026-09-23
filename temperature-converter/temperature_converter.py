@@ -21,7 +21,9 @@ def fahrenheit_to_celsius(fahrenheit):
 
 if temp_type == "C" or temp_type == "c":
     celsius_to_fahrenheit(user_temp)
-    print(celsius_to_fahrenheit(user_temp))
+    print(f"The converted temperature is: {celsius_to_fahrenheit(user_temp):.1f}° F")
 elif temp_type == "F" or temp_type == "f":
     fahrenheit_to_celsius(user_temp)
-    print(celsius_to_fahrenheit(user_temp))
+    print(f"The converted temperature is: {fahrenheit_to_celsius(user_temp):.1f}° C")
+else:
+    is_valid_unit(temp_type)
