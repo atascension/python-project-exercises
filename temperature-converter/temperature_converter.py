@@ -13,10 +13,7 @@ def fahrenheit_to_celsius(fahrenheit):
 
 
 def display_result(original_temperature, original_unit, converted_temperature, converted_unit):
-    print(
-        f"{original_temperature:.1f}°{original_unit} converts to "
-        f"{converted_temperature:.1f}°{converted_unit}"
-    )
+    print(f"{original_temperature:.1f}°{original_unit} converts to {converted_temperature:.1f}°{converted_unit}")
 
 
 print("Temperature Converter")
