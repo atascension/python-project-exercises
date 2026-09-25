@@ -1,3 +1,13 @@
+"""
+def is_valid_unit(unit):
+    if unit == "C" or unit == "F":
+        return True
+    else:
+        return False
+
+The below is the equivilant of this ↑
+"""
+
 def is_valid_unit(unit):
     return unit == "C" or unit == "F"
     
